@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins;
+  background: #fcfdfc;
+}
+
+/* #00d084 remember this color when next you need a cool green you can't use it for this project again */
+
+.text-primary-gradient {
+  background: linear-gradient(67deg, #00d084, rgb(63, 235, 195), #00d084);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(67deg, #00d084, #86eb91, #00d084);
+}
+
+.mobile-navbar {
+  animation-name: mobilenav;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  top: -90vh;
+  opacity: 0;
+}
+
+@keyframes mobilenav {
+  to {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+.hero-radius {
+  background: linear-gradient(67deg, #00d084, #4ddda8, #00d084);
+}
+
+.emoji-animate {
+  animation-name: emojianimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes emojianimation {
+  0%{
+    transform: translate(40px, 90px);
+  }
+  33%{
+    transform: translate(60px, -40px);
+  }
+  67%{
+    transform: translate(-50px, 40px);
+  }
+  100%{
+    transform: translate(40px, 90px);
+  }
+}
+
+.product-shadow {
+  box-shadow: 1px 1px 6px 6px rgb(211, 214, 211);
+}
+
+.form-shadow {
+  box-shadow: 1px 6px 6px 5px rgb(211, 214, 211);
+}
+
+.bg-about-one {
+  background:linear-gradient(45deg, #00d084, #38E54D, #00d084);
+}
+.bg-about-two {
+  background: linear-gradient(45deg, #ff0, #38E54D, #ff0);
+}
