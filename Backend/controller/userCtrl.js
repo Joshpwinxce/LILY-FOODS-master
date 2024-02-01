@@ -29,7 +29,7 @@ const loginUserCtrl = asyncHandler(async(req, res) =>{
     }else{
 
         throw new Error('Invalid Credentials');
-
+ 
 }
 
 });
